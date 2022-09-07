@@ -1,4 +1,4 @@
-from re import M
+#from re import M
 import turtle
 MyTurtle = turtle.Turtle()
 Window = turtle.Screen()
