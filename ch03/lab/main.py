@@ -1,6 +1,7 @@
 import turtle #1. import modules
 import random
-
+import math
+import pygame
 #Part A
 window = turtle.Screen() # 2.  Create a screen
 window.bgcolor('lightblue')
@@ -18,34 +19,38 @@ michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
 
 ## 5. Your PART A code goes here
-a = random.randrange(1,101)
-b = random.randrange(1,101)
-michelangelo.forward(a)
-leonardo.forward(b)
+ranRange1 = random.randrange(1,101)
+ranRange2 = random.randrange(1,101)
+michelangelo.forward(ranRange1)
+leonardo.forward(ranRange2)
 michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
-x = random.randrange(1,11)
-y = random.randrange(1,11)
+ranRange3 = random.randrange(1,11)
+ranRange4 = random.randrange(1,11)
 for i in range(10):
-  michelangelo.forward(x)
-  leonardo.forward(y)
+  michelangelo.forward(ranRange3)
+  leonardo.forward(ranRange4)
 michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
 
 # PART B - complete part B here
-import math
-import pygame
 pygame.init()
 screen = pygame.display.set_mode()
-coords = [x,y]
-num_sides = 3
-side_length = 50
-offset = 50
-for i in range(3):
-  theta = (2.0 * math.pi * (i + 1)) / num_sides
-  x = side_length * math.cos(theta) + offset
-  y = side_length * math.sin(theta) + offset
-pygame.draw.polygon(surface)
+numSides = [3,4,6,9,360]
+side_length = 100
+offset = 200
+for i in numSides:
+  screen.fill("black")
+  coords = [(0,0),(0,0)] * i
+  for n in range(i):
+    theta = (2 * math.pi * (n)) / i
+    x = side_length * math.cos(theta) + offset
+    y = side_length * math.sin(theta) + offset
+    coords[n] = (x,y)
+    pygame.draw.polygon(screen, "blue", coords)
+    pygame.display.flip()
+    pygame.time.wait(100)
+
   
 
 
