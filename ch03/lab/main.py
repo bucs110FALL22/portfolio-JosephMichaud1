@@ -51,8 +51,3 @@ for i in numSides:
     pygame.display.flip()
     pygame.time.wait(100)
 
-  
-
-
-
-window.exitonclick()
