@@ -37,13 +37,14 @@ def graph():
         else:
             number = number * 3 + 1
         count = count + 1
+        count = count + 1
         iners[number] = count
         iners.items()
         print(iners[1])
     pygame.draw.line(window,(0,0,0,),[0,250],[500,250],2)
     pygame.draw.line(window,(0,0,0,),[250,0],(250,500),2)
-    pygame.draw.line(window,(0,0,0),[123,123],[123,123],2)
-    pygame.draw.line(window,(0,0,0,),[123,123],[123,123],2)
+    pygame.draw.line(window,(0,0,0),[124,124],[125,125],2)
+    pygame.draw.line(window,(0,0,0,),[125,125],[12,12],2)
     pygame.display.update()
     pygame.time.wait(5000)
     newWindow = pygame.transform.flip(window,False,True)

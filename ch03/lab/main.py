@@ -1,7 +1,8 @@
-import turtle #1. import modules
-import random
 import math
+import random
+import turtle
 import pygame
+
 #Part A
 window = turtle.Screen() # 2.  Create a screen
 window.bgcolor('lightblue')
