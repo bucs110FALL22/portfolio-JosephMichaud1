@@ -7,9 +7,9 @@ def febseq():
     num1 = 25
     num2 = 0
     num = 0
-    while num < 25:
+    while num < 850:
         num = num1 + num2
-        print(num)
+        print("The Fibonacci sequence numbers: " + str(num))
         num1 = num2
         num2 = num
 def goldenratio():
@@ -78,6 +78,7 @@ def goldenratio():
                 turtleDrawing.forward(placeHoldernum)
                 turtleDrawing.right(90)
         turtleDrawing.right(90)
+        print("The Fibonacci sequence numbers: " + str(placeHoldernum))
         forward1 = forward2
         forward2 = placeHoldernum
 def curve():
@@ -90,7 +91,6 @@ def curve():
     turtleDrawing.pendown()
     turtleDrawing.right(90)
     for i in range(850):
-        print(forward1)
         fdwd = math.pi * forward1 * factor / 2
         fdwd /= 90
         for j in range(90):
