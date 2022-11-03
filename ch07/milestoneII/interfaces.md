@@ -23,12 +23,19 @@ Come up with interfaces fot 3 possible classes you think you may need. Again, br
 
 ## Class Interface 1
 
-< add your interface >
+* buttons
+    * colorButton()
+    * pressedButton()
+    * orientationButton()
+
 
 ## Class Interface 2
 
-< add your interface >
-
+* notes
+    * typeNote()
+    * moveNote()
+    * pressedNote()
 ## Class Interface 3
 
-< add your interface >
+
+
