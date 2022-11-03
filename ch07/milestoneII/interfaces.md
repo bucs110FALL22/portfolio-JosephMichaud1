@@ -35,7 +35,12 @@ Come up with interfaces fot 3 possible classes you think you may need. Again, br
     * typeNote()
     * moveNote()
     * pressedNote()
+
+    
 ## Class Interface 3
 
+*sprite
+    *sizeSprite()
+    *positionSprite()
 
 
