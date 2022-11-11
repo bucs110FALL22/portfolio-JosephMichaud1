@@ -13,4 +13,5 @@ class Rectangle:
         if self.width<0:
             self.width=0
     def __str__(self):
+        
         return f"{self.x},{self.y},{self.width},{self.height}"
