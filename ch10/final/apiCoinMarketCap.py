@@ -14,7 +14,14 @@ class CMC:
       getURL = self.session.get(url)
       data = getURL.json()["data"]
       return data
+    def getPrice(self, symbol):
+      url = self.apiurl + "/v1/cryptocurrency/quotes/latest"
+      parameters = {'symbol': symbol}
+      getURL = self.session.get(url, params=parameters)
+      data = getURL.json()["data"]
+      return data
+
 
 
 coinMarketCap = CMC(apiKey.apiKeyCoinMarketCap)
-pp(coinMarketCap.getAllCoins())
+pp(coinMarketCap.getPrice("BTC"))
