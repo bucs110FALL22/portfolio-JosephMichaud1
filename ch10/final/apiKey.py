@@ -1,0 +1,1 @@
+apiKeyCoinMarketCap = '8e5d5924-4c5c-4645-8bb6-86aa9a7e4442'
