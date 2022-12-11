@@ -13,6 +13,7 @@ class CMC:
       url = self.apiurl + '/v1/cryptocurrency/map'
       getURL = self.session.get(url)
       data = getURL.json()["data"]
+      return data
 
 
 coinMarketCap = CMC(apiKey.apiKeyCoinMarketCap)
