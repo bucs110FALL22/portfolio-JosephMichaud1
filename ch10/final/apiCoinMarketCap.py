@@ -1,6 +1,7 @@
 import requests
-from requests import Session
 import apiKey
+import json
+from requests import Session
 from pprint import pprint as pp
 
 class CMC:
@@ -21,7 +22,12 @@ class CMC:
       data = getURL.json()["data"]
       return data
 
+def getprice():
+  coinMarketCap = CMC(apiKey.apiKeyCoinMarketCap)
+  data =(coinMarketCap.getPrice("BTC"))
+  pp("Price of a Bitcoin")
+  pp(data["BTC"]["quote"]["USD"]["price"])
 
 
-coinMarketCap = CMC(apiKey.apiKeyCoinMarketCap)
-pp(coinMarketCap.getPrice("BTC"))
+
+
