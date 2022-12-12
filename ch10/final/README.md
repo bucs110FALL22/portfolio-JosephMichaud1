@@ -1,7 +1,7 @@
 # CS110 Final Exam
 
 ## SHORT DESCRIPTION *(1 or 2 sentences describing your program)*
-I will be using AI to invest into crypto based off of curency prices
+the program will combine BitCoin and world currencys
 ## KNOWN BUGS AND INCOMPLETE PARTS *(list any known bugs or non-working parts)*
 
 ## REFERENCES *(any resources you use outside of class materials)*
